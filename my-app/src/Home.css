@@ -1,0 +1,77 @@
+.navDiv{
+    height:90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(252, 251, 249);
+}
+
+.logo{
+    margin : 10px 50px 10px 10px;
+
+    height: 70px;
+  margin-right: 50px;
+}   
+.navigation{
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation li{
+    font-size: 20px;
+    margin-left: 100px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.navigation li:hover{
+  color: rgb(46, 48, 49);
+}
+ ul{
+    margin-left: 100px;
+}
+
+
+.corosel {
+  position: relative;
+  border: 10px black;
+  width: 100%;
+  height: 600px;
+}
+
+.images img {
+  width: 100%;
+  height: 600px;
+  filter: blur(2px);
+}
+.text{
+    position: absolute;
+    top: 270px;
+    left: 50%;
+   font-size: 20px;
+    font-weight: bolder;
+    color: rgb(6, 7, 7);
+    
+  transform: translateX(-50%);
+}
+.arrow{
+    position: absolute;
+     top: 50%;
+  transform: translateY(-50%);
+    padding: 20px;
+    background:rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    cursor: pointer;
+    size: 5px;
+    
+  z-index: 1;            /* Ensuring it appears above other elements. */
+  
+  user-select: none; 
+}
+
+.arrow.prev{
+    left:20px;
+}
+
+.arrow.next{
+    right:20px;
+}
